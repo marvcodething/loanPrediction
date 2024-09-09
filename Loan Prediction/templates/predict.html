@@ -15,10 +15,10 @@
         <div class="text-center mb-4">
             {% if prediction == 0 %}
                 <!-- <img src="{{ url_for('static', filename='images/iris_setosa.jpg') }}" class="img-thumbnail" /> -->
-                <h1 class="text-3xl text-red-500">No</h1>
+                <h1 class="text-3xl text-red-500">You don't get a loan, oh man. :(</h1>
             {% elif prediction == 1 %}
                 <!-- <img src="{{ url_for('static', filename='images/iris_versicolor.jpg') }}" class="img-thumbnail" /> -->
-                <h1 class="text-3xl text-green-500">Yes</h1>
+                <h1 class="text-3xl text-green-500">You get a loan!!! Yayyy!</h1>
             {% endif %}
         </div>
 
