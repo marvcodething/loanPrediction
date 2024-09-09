@@ -12,43 +12,61 @@
         <form action="/predict/" method="post" class="space-y-4">
             <div class="flex flex-col">
                 <label for="Gender" class="text-sm font-medium">Gender</label>
-                <input type="text" id="Gender" name="Gender" required class="border border-gray-300 p-2 rounded">
+                <select id="Gender" name="Gender" required class="border border-gray-300 p-2 rounded">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
             </div>
             <div class="flex flex-col">
                 <label for="Married" class="text-sm font-medium">Married</label>
-                <input type="text" id="Married" name="Married" required class="border border-gray-300 p-2 rounded">
+                <select id="Married" name="Married" required class="border border-gray-300 p-2 rounded">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
             </div>
             <div class="flex flex-col">
                 <label for="Education" class="text-sm font-medium">Education</label>
-                <input type="text" id="Education" name="Education" required class="border border-gray-300 p-2 rounded">
+                <select id="Education" name="Education" required class="border border-gray-300 p-2 rounded">
+                    <option value="0">Graduate</option>
+                    <option value="1">Not Graduate</option>
+                </select>
             </div>
             <div class="flex flex-col">
                 <label for="Self_Employed" class="text-sm font-medium">Self Employed</label>
-                <input type="text" id="Self_Employed" name="Self_Employed" required class="border border-gray-300 p-2 rounded">
+                <select id="Self_Employed" name="Self_Employed" required class="border border-gray-300 p-2 rounded">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
             </div>
             <div class="flex flex-col">
-                <label for="ApplicantIncome" class="text-sm font-medium">Applicant Income</label>
+                <label for="ApplicantIncome" class="text-sm font-medium">Applicant Income(By Thousand)</label>
                 <input type="number" id="ApplicantIncome" name="ApplicantIncome" required class="border border-gray-300 p-2 rounded">
             </div>
             <div class="flex flex-col">
-                <label for="CoapplicantIncome" class="text-sm font-medium">Coapplicant Income</label>
+                <label for="CoapplicantIncome" class="text-sm font-medium">Coapplicant Income(By Thousand)</label>
                 <input type="number" id="CoapplicantIncome" name="CoapplicantIncome" required class="border border-gray-300 p-2 rounded">
             </div>
             <div class="flex flex-col">
-                <label for="LoanAmount" class="text-sm font-medium">Loan Amount</label>
+                <label for="LoanAmount" class="text-sm font-medium">Loan Amount(By Thousand)</label>
                 <input type="number" id="LoanAmount" name="LoanAmount" required class="border border-gray-300 p-2 rounded">
             </div>
             <div class="flex flex-col">
-                <label for="Loan_Amount_Term" class="text-sm font-medium">Loan Amount Term</label>
+                <label for="Loan_Amount_Term" class="text-sm font-medium">Loan Amount Term(By Month)</label>
                 <input type="number" id="Loan_Amount_Term" name="Loan_Amount_Term" required class="border border-gray-300 p-2 rounded">
             </div>
             <div class="flex flex-col">
                 <label for="Credit_History" class="text-sm font-medium">Credit History</label>
-                <input type="number" id="Credit_History" name="Credit_History" required class="border border-gray-300 p-2 rounded">
+                <select id="Credit_History" name="Credit_History" required class="border border-gray-300 p-2 rounded">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
             </div>
             <div class="flex flex-col">
                 <label for="Property_Area" class="text-sm font-medium">Property Area</label>
-                <input type="text" id="Property_Area" name="Property_Area" required class="border border-gray-300 p-2 rounded">
+                <select id="Property_Area" name="Property_Area" required class="border border-gray-300 p-2 rounded">
+                    <option value="2">Urban</option>
+                    <option value="1">Suburban</option>
+                    <option value="0">Rural</option>
+                </select>
             </div>
             <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit</button>
         </form>
